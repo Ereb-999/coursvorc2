@@ -1,8 +1,10 @@
 package pro.Sky.coursework.curs.the.two;
 
+import org.springframework.stereotype.Service;
+
 import java.util.*;
 
-
+@Service
 public class JavaQuestionServiceImpl implements QuestionService{
 
     private final Set<Question> questionsRepository = new HashSet<>();

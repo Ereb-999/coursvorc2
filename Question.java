@@ -1,6 +1,5 @@
 package pro.Sky.coursework.curs.the.two;
 
-import java.util.Collection;
 import java.util.Objects;
 
 public class Question {
@@ -10,14 +9,6 @@ public class Question {
     public Question(String question, String answer) {
         this.question = question;
         this.answer = answer;
-    }
-
-    public String getQuestion() {
-        return question;
-    }
-
-    public String getAnswer() {
-        return answer;
     }
 
     @Override
