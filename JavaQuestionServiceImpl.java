@@ -11,14 +11,13 @@ public class JavaQuestionServiceImpl implements QuestionService{
     private Random random = new Random();
     public void setRandom(Random random) {this.random = random;}
     @Override
-    public boolean add(String question, String answer) {
-        return questionsRepository.add(new Question(question, answer));
+    public void add(String question, String answer) {
+       questionsRepository.add(new Question(question, answer));
     }
     @Override
-    public boolean remove(String question, String answer) {
-
-    return questionsRepository.remove(new Question(question, answer));
-}
+    public void remove(String question, String answer) {
+       questionsRepository.remove(new Question(question, answer));
+    }
 
     @Override
     public Collection<Question> getAll() {

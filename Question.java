@@ -6,6 +6,14 @@ public class Question {
     private final String question;
     private final String answer;
 
+    public String getQuestion() {
+        return question;
+    }
+
+    public String getAnswer() {
+        return answer;
+    }
+
     public Question(String question, String answer) {
         this.question = question;
         this.answer = answer;
@@ -26,7 +34,7 @@ public class Question {
 
     @Override
     public String toString(){
-        return "Вопрос: " + question +
+        return "Вопрос: " + question + '\'' +
                 " Ответ: " + answer;
     }
 }
